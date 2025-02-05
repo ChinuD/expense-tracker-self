@@ -21,12 +21,12 @@ function Add_Expense({onAddExpense}) {
   return (
     <div className='flex flex-col items-center justify-center border-black'>
         <div className="flex flex-row">
-            <input type="number" placeholder='Amount' value={amount} onChange={(e)=> setAmount(e.target.value)} className='bg-white color-white outline-none m-4 p-2 rounded-md' />
-            <input type="text" placeholder='Tag' value={tag} onChange={(e)=> setTag(e.target.value)} className='bg-white color-white outline-none m-4 p-2 rounded-md' />
+            <input type="number" placeholder='Amount' value={amount} onChange={(e)=> setAmount(e.target.value)} className='bg-white color-white border outline-none m-4 p-2 rounded-md' />
+            <input type="text" placeholder='Tag' value={tag} onChange={(e)=> setTag(e.target.value)} className='bg-white border color-white outline-none m-4 p-2 rounded-md' />
         </div>
 
         <div className="">
-            <button className='bg-white m-4 p-2 rounded-sm' onClick={handleSubmit}>Submit</button>
+            <button className='bg-white mb-4 p-2 rounded-sm border' onClick={handleSubmit}>Submit</button>
         </div>
     </div>
   )
